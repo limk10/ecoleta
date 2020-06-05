@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "ts-node-dev src/server.ts",
+    "dev": "ts-node-dev --transpileOnly --ignore-watch node_modules src/server.ts",
     "test": "echo \"Error: no test specified\" &amp;&amp; exit 1",
     "lint": "eslint --fix ./src/*",
     "knex:migrate": "knex --knexfile knexfile.ts migrate:latest",
